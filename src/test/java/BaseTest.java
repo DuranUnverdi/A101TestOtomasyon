@@ -23,7 +23,7 @@ public class BaseTest {
             //Sayfa büyütüldü
             driver.manage().window().maximize();
             //Test süresi belirlendi
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(25));
         }
 
         @AfterAll

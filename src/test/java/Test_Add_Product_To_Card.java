@@ -1,9 +1,6 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
-import java.util.Date;
-import java.util.Timer;
-import java.util.TimerTask;
 
 
 public class Test_Add_Product_To_Card extends BaseTest{
@@ -11,7 +8,9 @@ public class Test_Add_Product_To_Card extends BaseTest{
     CookiesPage cookiesPage;
     CategoryPage categoryPage;
     ColorPage colorPage;
-    BasketPage basketPage;
+    CartPage cartPage;
+    IntermediateTransactionsPage intermediateTransactionsPage;
+    AddressandShippingPage addressandShippingPage;
 
 
     @Test
@@ -42,26 +41,57 @@ public class Test_Add_Product_To_Card extends BaseTest{
         categoryPage = new CategoryPage(driver);
         categoryPage.clothingAccessory();
         categoryPage.womenClothing();
+        try{
+            Thread.sleep(3000);
+        }
+        catch (InterruptedException e){
+            return;
+        }
         categoryPage.kneeCock();
 
     }
     @Test
     @Order(3)
-    public void search_a_Color(){
+    public void search_a_Color() {
 
         colorPage = new ColorPage(driver);
         colorPage.chooseColor();
         Assertions.assertTrue(colorPage.isBlack() ,"Black not selected!");
+        try{
+            Thread.sleep(3000);
+        }
+        catch (InterruptedException e){
+            return;
+        }
 
 
     }
     @Test
     @Order(4)
-    public void search_basket_Operations(){
+    public void cart_Operations(){
 
-        basketPage = new BasketPage(driver);
-        basketPage.addtoBasket();
+        cartPage = new CartPage(driver);
+        cartPage.addtoCart();
+        cartPage.confirmCart();
 
+    }
+
+    @Test
+    @Order(5)
+    public void cart_intermediate_Transactions(){
+
+        intermediateTransactionsPage =new IntermediateTransactionsPage(driver);
+        intermediateTransactionsPage.continuewithoutMember();
+        intermediateTransactionsPage.emailEnter("duranunverdi1905@gmail.com");
+    }
+    @Test
+    @Order(6)
+    public void cart_adress_Shipping(){
+
+        addressandShippingPage =new AddressandShippingPage(driver);
+        addressandShippingPage.createnewAddress();
+        addressandShippingPage.addressUpdated();
+        addressandShippingPage.saveAddress();
     }
 
 

@@ -3,7 +3,7 @@ import org.openqa.selenium.WebDriver;
 
 public class ColorPage extends BasePage{
     By colorLocator= By.xpath("//label[@for='attributes_integration_colourSİYAH']");
-    By blackcheckedLocator=By.xpath("//span[contains(text(),'SİYAH')]");
+    By blackcheckedLocator=By.xpath("//label[@for='attributes_integration_colourSİYAH']");
     public ColorPage(WebDriver driver) {
         super(driver);
     }
