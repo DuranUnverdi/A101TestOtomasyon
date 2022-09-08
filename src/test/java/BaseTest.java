@@ -1,5 +1,6 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -8,6 +9,7 @@ import java.time.Duration;
 //static oluşturulmadığı için
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+@ExtendWith(TestResultLogger.class)
 public class BaseTest {
 
 
@@ -25,7 +27,7 @@ public class BaseTest {
             //Sayfa büyütüldü
             driver.manage().window().maximize();
             //Test süresi belirlendi
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(35));
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
 
         }
 

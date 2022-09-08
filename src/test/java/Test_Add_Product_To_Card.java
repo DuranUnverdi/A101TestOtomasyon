@@ -11,6 +11,7 @@ public class Test_Add_Product_To_Card extends BaseTest{
     CartPage cartPage;
     IntermediateTransactionsPage intermediateTransactionsPage;
     AddressandShippingPage addressandShippingPage;
+    PayProcessPage payProcessPage;
 
 
     @Test
@@ -83,7 +84,7 @@ public class Test_Add_Product_To_Card extends BaseTest{
 
         intermediateTransactionsPage =new IntermediateTransactionsPage(driver);
         intermediateTransactionsPage.continuewithoutMember();
-        intermediateTransactionsPage.emailEnter("duranunverdimm1905@gmail.com");
+        intermediateTransactionsPage.emailEnter("duranunveardfiq1qq1905@gmail.com");
     }
     @Test
     @Order(6)
@@ -91,11 +92,25 @@ public class Test_Add_Product_To_Card extends BaseTest{
 
         addressandShippingPage =new AddressandShippingPage(driver);
         addressandShippingPage.createnewAddress();
-        Thread.sleep(4000);
+        Thread.sleep(3000);
         addressandShippingPage.addressUpdated();
         Thread.sleep(2000);
         addressandShippingPage.saveAddress();
 
+
+
+    }
+    @Test
+    @Order(7)
+    public void cart_pay_Process() throws InterruptedException {
+
+        payProcessPage =new PayProcessPage(driver);
+        Thread.sleep(2000);
+        payProcessPage.cartProcess();
+        Thread.sleep(2000);
+        payProcessPage.aggrementProcess();
+        payProcessPage.choosecontractComplete();
+        Assertions.assertTrue(payProcessPage.isPay() ,"not pay page!");
 
 
     }
