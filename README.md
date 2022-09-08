@@ -18,4 +18,4 @@
 
 ### Açıklama
 
-Uçtan uca test işlemi gerçekleştirildi.**Maven** yapısı kullanıldı bununla beraber test sonuçlarının çıktısını tutabilmek için **log** yapısı kullanıldı.</br>**Actions classları** ve **Assertionlar** kullanıldı
+Uçtan uca test işlemi gerçekleştirildi.**Maven** yapısı kullanıldı bununla beraber test sonuçlarının çıktısını tutabilmek için **log** yapısı kullanıldı.</br>**Actions classları** ve **Assertionlar** kullanıldı.
