@@ -36,17 +36,13 @@ public class Test_Add_Product_To_Card extends BaseTest{
     }*/
     @Test
     @Order(2)
-    public void search_a_Category(){
+    public void search_a_Category() throws InterruptedException {
 
         categoryPage = new CategoryPage(driver);
         categoryPage.clothingAccessory();
+        Thread.sleep(2000);
         categoryPage.womenClothing();
-        try{
-            Thread.sleep(3000);
-        }
-        catch (InterruptedException e){
-            return;
-        }
+        Thread.sleep(3000);
         categoryPage.kneeCock();
 
     }
@@ -73,7 +69,12 @@ public class Test_Add_Product_To_Card extends BaseTest{
         cartPage = new CartPage(driver);
         cartPage.addtoCart();
         cartPage.confirmCart();
-
+        try{
+            Thread.sleep(3000);
+        }
+        catch (InterruptedException e){
+            return;
+        }
     }
 
     @Test
@@ -82,16 +83,21 @@ public class Test_Add_Product_To_Card extends BaseTest{
 
         intermediateTransactionsPage =new IntermediateTransactionsPage(driver);
         intermediateTransactionsPage.continuewithoutMember();
-        intermediateTransactionsPage.emailEnter("duranunverdi1905@gmail.com");
+        intermediateTransactionsPage.emailEnter("duranunverdimm1905@gmail.com");
     }
     @Test
     @Order(6)
-    public void cart_adress_Shipping(){
+    public void cart_adress_Shipping() throws InterruptedException {
 
         addressandShippingPage =new AddressandShippingPage(driver);
         addressandShippingPage.createnewAddress();
+        Thread.sleep(4000);
         addressandShippingPage.addressUpdated();
+        Thread.sleep(2000);
         addressandShippingPage.saveAddress();
+
+
+
     }
 
 
