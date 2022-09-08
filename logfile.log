@@ -1,0 +1,7 @@
+2022-09-08 14:40:28,865 INFO  [Log] accept_Cookies() PASSED 
+2022-09-08 14:40:35,825 INFO  [Log] search_a_Category() PASSED 
+2022-09-08 14:40:39,404 INFO  [Log] search_a_Color() PASSED 
+2022-09-08 14:40:50,125 INFO  [Log] cart_Operations() PASSED 
+2022-09-08 14:40:50,703 INFO  [Log] cart_intermediate_Transactions() PASSED 
+2022-09-08 14:41:01,873 INFO  [Log] cart_adress_Shipping() PASSED 
+2022-09-08 14:41:07,719 INFO  [Log] cart_pay_Process() PASSED 
