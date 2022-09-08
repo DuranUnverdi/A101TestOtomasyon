@@ -1,7 +1,4 @@
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 
 public class PayProcessPage extends BasePage{
@@ -36,8 +33,12 @@ public class PayProcessPage extends BasePage{
                 .sendKeys("123")
             .perform();
     }
+
     public void aggrementProcess() {
-        click(aggreementLocator);
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        String el = "document.getElementById('agrement2').click()";
+        js.executeScript(el);
+       // click(aggreementLocator);
     }
     public void choosecontractComplete(){
 

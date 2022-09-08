@@ -5,3 +5,54 @@
 2022-09-08 14:40:50,703 INFO  [Log] cart_intermediate_Transactions() PASSED 
 2022-09-08 14:41:01,873 INFO  [Log] cart_adress_Shipping() PASSED 
 2022-09-08 14:41:07,719 INFO  [Log] cart_pay_Process() PASSED 
+2022-09-08 16:28:21,796 INFO  [Log] accept_Cookies() PASSED 
+2022-09-08 16:28:31,984 INFO  [Log] search_a_Category() PASSED 
+2022-09-08 16:28:32,448 ERROR [Log] search_a_Color() FAILED with cause : stale element reference: element is not attached to the page document
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-LI8CF0L', ip: '192.168.1.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bbc2f00de19d43144c11fac857d90f65, isElementDisplayed {id=c4a06f86-28cc-4198-9d9d-6c590f81a2e9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Duran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59601}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59601/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (bbc2f00de19d43144c11fac857d90f65)] -> xpath: //label[@for='attributes_integration_colourSİYAH']]
+Session ID: bbc2f00de19d43144c11fac857d90f65 
+2022-09-08 16:28:33,808 ERROR [Log] cart_Operations() FAILED with cause : element click intercepted: Element <span class="hidden-mobile">...</span> is not clickable at point (532, 183). Other element would receive the click: <h3 class="name">...</h3>
+  (Session info: chrome=105.0.5195.102)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-LI8CF0L', ip: '192.168.1.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bbc2f00de19d43144c11fac857d90f65, clickElement {id=018dbc8d-5d89-4227-ab4a-1edba9319b2d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Duran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59601}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59601/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (bbc2f00de19d43144c11fac857d90f65)] -> xpath: /html[1]/body[1]/section[1]/section[4]/div[3]/div[2]/div[1]/div[2]/div[2]/div[1]/ul[1]/li[1]/article[1]/div[1]/div[2]/div[2]/a[1]/strong[1]/span[1]]
+Session ID: bbc2f00de19d43144c11fac857d90f65 
+2022-09-08 16:28:48,378 ERROR [Log] cart_intermediate_Transactions() FAILED with cause : Unable to find element with locator By.xpath: //a[@title='ÜYE OLMADAN DEVAM ET']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-LI8CF0L', ip: '192.168.1.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: driver.version: RemoteWebDriver 
+2022-09-08 16:28:48,545 ERROR [Log] cart_adress_Shipping() FAILED with cause : no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=105.0.5195.102)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-LI8CF0L', ip: '192.168.1.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bbc2f00de19d43144c11fac857d90f65, findElement {using=xpath, value=//input[@placeholder='Ev adresim, iş adresim vb.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Duran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59601}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59601/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bbc2f00de19d43144c11fac857d90f65 
+2022-09-08 16:28:48,603 ERROR [Log] cart_pay_Process() FAILED with cause : no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=105.0.5195.102)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-LI8CF0L', ip: '192.168.1.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bbc2f00de19d43144c11fac857d90f65, findElement {using=xpath, value=//div[@class='form-area js-new-creditcard-area']//input[@name='name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Duran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59601}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59601/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bbc2f00de19d43144c11fac857d90f65 
+2022-09-08 16:29:23,746 INFO  [Log] accept_Cookies() PASSED 
+2022-09-08 16:29:30,889 INFO  [Log] search_a_Category() PASSED 
+2022-09-08 16:29:34,574 INFO  [Log] search_a_Color() PASSED 
+2022-09-08 16:29:44,875 INFO  [Log] cart_Operations() PASSED 
+2022-09-08 16:29:45,569 INFO  [Log] cart_intermediate_Transactions() PASSED 
+2022-09-08 16:29:58,634 INFO  [Log] cart_adress_Shipping() PASSED 
+2022-09-08 16:30:04,633 INFO  [Log] cart_pay_Process() PASSED 
