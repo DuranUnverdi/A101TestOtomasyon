@@ -84,7 +84,7 @@ public class Test_Add_Product_To_Card extends BaseTest{
 
         intermediateTransactionsPage =new IntermediateTransactionsPage(driver);
         intermediateTransactionsPage.continuewithoutMember();
-        intermediateTransactionsPage.emailEnter("duranundveardfiq1qq1905@gmail.com");
+        intermediateTransactionsPage.emailEnter(intermediateTransactionsPage.getSaltString()+"@gmail.com");
     }
     @Test
     @Order(6)
