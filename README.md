@@ -14,7 +14,6 @@
 
 **Kullanılan Dil:** Java</br>
 **Kullanılan Teknoloji :** Selenium</br>
-**Kullanılan Framework :** JUnit</br>
 
 ### Açıklama
 
